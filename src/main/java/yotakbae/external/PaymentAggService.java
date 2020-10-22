@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
 
-@FeignClient(name="Payment", url="${api.url.payment}")
+@FeignClient(name="PaymentContext", url="${api.url.payment}")
 // @FeignClient(name="PaymentContext", url="http://localhost:8082")
 public interface PaymentAggService {
 
