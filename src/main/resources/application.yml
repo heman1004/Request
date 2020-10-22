@@ -79,7 +79,7 @@ spring:
 
 api:
   url:
-    payment: http://PaymentContext:8080
+    payment: http://paymentcontext:8080
 
 feign:
   hystrix:
