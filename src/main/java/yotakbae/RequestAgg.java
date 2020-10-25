@@ -32,6 +32,7 @@ public class RequestAgg {
         paymentAgg.setStatus("Paid");
         //LJK
 
+
         RequestContextApplication.applicationContext.getBean(yotakbae.external.PaymentAggService.class)
             .dopay(paymentAgg);
 
