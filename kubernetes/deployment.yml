@@ -24,7 +24,7 @@ spec:
                 valueFrom:
                   configMapKeyRef:
                     name: hello-cm
-                    key: language  
+                    key: language
           readinessProbe:
             httpGet:
               path: '/actuator/health'
