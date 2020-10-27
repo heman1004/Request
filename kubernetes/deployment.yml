@@ -19,6 +19,12 @@ spec:
           image: username/requestcontext:latest
           ports:
             - containerPort: 8080
+          env:
+            - name: LANGUAGE
+                valueFrom:
+                  configMapKeyRef:
+                    name: hello-cm
+                    key: language  
           readinessProbe:
             httpGet:
               path: '/actuator/health'
